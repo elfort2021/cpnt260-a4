@@ -157,14 +157,14 @@ li a:visited{
 .card-content { 
   max-height: 50%; 
   width: 100%; 
-  background-color: rgb(43, 71, 37, 0.3); 
+  /* background-color: rgb(43, 71, 37, 0.3);  */
   display: flex; 
   flex-wrap:wrap;
   justify-content: center; 
   align-items: center;
  
-  border-radius: 10px; 
-  box-shadow: 2px 2px 2px 2px gray; 
+  /* border-radius: 10px; 
+  box-shadow: 2px 2px 2px 2px gray;  */
   margin: auto; 
   margin-top: 5px; 
   margin-bottom: 10px; 
@@ -172,9 +172,11 @@ li a:visited{
   
 }
 .card-text { 
+  border: 1px solid gray; 
+  padding: 5px; 
   margin: 5%; 
   max-width: 40ch; 
-
+  text-align: center;
 }
 .card-text h4 { 
   font-size: 1rem; 
@@ -184,8 +186,9 @@ li a:visited{
 .card-content .card-image { 
   width: 200px; 
   max-height: 50vh; 
-  border-radius: 20px; 
+  border-radius: 300%;
   margin: 10px; 
+  
 }
 
 
@@ -213,8 +216,10 @@ li a:visited{
 
 .form-container h4 { 
   text-transform: uppercase;
-  font-size: 1.5rem; 
+  font-size: 2rem; 
   padding: 1px; 
+  margin-top: 2px;
+  margin-bottom: 2px; 
 
 }
 
@@ -227,7 +232,7 @@ li a:visited{
   padding: 3px; 
   /* border-radius: 20%; */
 
-  max-width: 50%;
+  min-width: 40%;
   margin-bottom: 10px; 
 
 }
@@ -239,14 +244,24 @@ li a:visited{
   font-size: 1rem; 
 
 }
+
+.form-action input {
+height: 20px; 
+width: 100%; 
+font-size: .5rem; 
+}
+
+
 button[type="submit"] { 
 
 width: 75%; 
-margin-top: 10px; 
+margin-top: 5px; 
 border-radius: 5px;
-background-color: rgb(43, 71, 37, 0.5); 
+background-color: rgb(43, 72,  37, 0.5);  
 
 }
+
+/* this looks like total crap and I hate it. Just thought i'd also throw that in that i know it looks like garbage */ 
 
 button[type="submit"]:hover {
   cursor: pointer;
@@ -277,7 +292,6 @@ button[type="submit"]:hover {
   justify-content: center;
   margin: 10px; 
   padding: 5px; 
-  width: 40%; 
 }
 
  
